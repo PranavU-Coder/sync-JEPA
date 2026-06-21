@@ -19,6 +19,3 @@ wheels/
 htmlcov/
 .tox/
 .nox/
-
-# specific files/dirs 
-src/pyplatez/templates/

@@ -1,13 +1,10 @@
 [project]
-name = "pyplatez"
-version = "0.1.1"
-description = "Batteries-included python-starter project template"
+name = "syncJEPA"
+version = "0.1.0"
+description = "AudioJEPA with SIGReg Loss"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = []
-
-[project.scripts]
-pyplatez = "pyplatez.cli:main"
 
 [dependency-groups]
 dev = [
@@ -25,7 +22,6 @@ build-backend = "hatchling.build"
 [tool.hatch.build.hooks.custom]
 [tool.hatch.build.targets.wheel]
 
-packages = ["src/pyplatez"]
 
 [tool.uv]
 package = true
