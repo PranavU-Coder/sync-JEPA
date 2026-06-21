@@ -1,0 +1,49 @@
+name: Bug Report
+description: File a bug report to help us improve the project
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: A clear and concise description of the issue.
+      placeholder: |
+        Describe the issue you encountered and what you expected to happen.
+        Example: "[PLACEHOLDER]"
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: Provide step-by-step instructions to reproduce the issue.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: What should have happened instead?
+      placeholder: "Describe the expected outcome or behavior that you anticipated."
+      render: markdown
+
+  - type: textarea
+    attributes:
+      label: Screenshots / logs
+      description: Paste any error logs or add screenshots if applicable.
+      placeholder: "[insert-image of issue that persists] with suitable caption."
+      render: markdown
+
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Any other details or edge cases that might be related.
+      placeholder: "Tell us more about the situation and any additional information that might be helpful."
+      render: markdown

@@ -1,0 +1,31 @@
+[project]
+name = "pyplatez"
+version = "0.1.1"
+description = "Batteries-included python-starter project template"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+pyplatez = "pyplatez.cli:main"
+
+[dependency-groups]
+dev = [
+    "build>=1.4.2",
+    "hatchling>=1.29.0",
+    "pytest>=9.0.2",
+    "ruff>=0.15.8",
+    "twine>=6.2.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.hooks.custom]
+[tool.hatch.build.targets.wheel]
+
+packages = ["src/pyplatez"]
+
+[tool.uv]
+package = true
