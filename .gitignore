@@ -18,4 +18,9 @@ wheels/
 .coverage
 htmlcov/
 .tox/
+cache/
+runs/
+
+# dataset
+data/fsd50k
 .nox/

@@ -3,8 +3,15 @@ name = "syncJEPA"
 version = "0.1.0"
 description = "AudioJEPA with SIGReg Loss"
 readme = "README.md"
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.13"
+dependencies = [
+    "pyyaml>=6.0.3",
+    "scikit-learn>=1.9.0",
+    "torch>=2.6.0",
+    "torchaudio>=2.6.0",
+    "tqdm>=4.68.3",
+    "wandb>=0.28.0",
+]
 
 [dependency-groups]
 dev = [
@@ -14,7 +21,17 @@ dev = [
     "pytest>=9.0.2",
     "ruff>=0.15.8",
     "twine>=6.2.0",
+    "zenodo-get>=3.0.3",
 ]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu124" }]
+torchaudio = [{ index = "pytorch-cu124" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
 
 [tool.hatch.build.hooks.custom]
 [tool.hatch.build.targets.wheel]
