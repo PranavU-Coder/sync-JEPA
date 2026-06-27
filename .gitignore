@@ -23,4 +23,5 @@ runs/
 
 # dataset
 data/fsd50k
+data/esc50
 .nox/
